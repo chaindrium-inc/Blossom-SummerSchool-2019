@@ -10,21 +10,20 @@ This repository has **three** parts. You can choose one of the three parts or do
 - For hard-coders
 
 ### For non-programmers
-Diese Anleitung leitet Sie durch den Prozess eine Transaktion auf dem [Ethereum Test Netzwerk](https://ropsten.etherscan.io/) von einer Addresse zu einer anderen ausführen. Dieses Projekt richtet sich explizit an TeilnehmerInnen die keine Programmiererfahrung haben und trotzdem gerne einen Einblick in den praktischen Umgang mit Blockchains haben möchten.
-*Sollten Sie Fragen haben geben Sie gerne Handzeichen oder sprechen uns direkt an.*
+This tutorial is to demonstrate how payments can be made from one address to another address in the [Etheream Test Network](https://ropsten.etherscan.io/). This part of the tutorial is for those participants who have no programming expertise but would still like to experience first hand how transactions take place in Ethereum. It is also applicable for those who would like to ease into the tutorials by performing an easier tasks first. 
 
-Dazu sind die folgenden Schritte nötig:
-- **Auf das von uns vorbereitete Wallet zu greifen** 
-	- Rufen Sie in Ihrem Browser https://www.myetherwallet.com/ auf
-	- klicken Sie auf `Access My Wallet`
-	- klicken Sie auf `Software` 
-	- wählen Sie `Mnemonic Phrase` aus und klicken Sie `continue`
-	- geben Sie die von uns bereit gestellten 12 Werte, sie sollten auf dem Beamer zu sehen sein.
-		- Jetzt sollten Sie unter `1` das testnet `ROP - myetherwallet.com` auswählen
-		- unter `2` müssen Sie oben rechts `Ethereum Testnet (Ropsten)` Auswählen
-		- nun sollten Sie eine Liste mit Addressen und Guthaben sehen
-		- wähen Sie eine der Addressen, die ein Guthaben hat, aus und klicken Sie auf `Access My Wallet`
-			- (Wir koordinieren dann dass nicht alle die selbe Addresse auswählen)
+Please do the following:
+- **Access an already prepared account** 
+	- Go to the following website in your browser: https://www.myetherwallet.com/ 
+	- Click on `Access My Wallet`
+	- Click on `Software` 
+	- Select `Mnemonic Phrase` and click on `continue`
+	- Please give the 12 words that you can see on the beamer.
+		- now, in `1`, please choose the testnet `ROP - myetherwallet.com` 
+		- in `2`, please select on the top right hand corner `Ethereum Testnet (Ropsten)`
+		- now, you should see a list with addresses and corresponding balance
+		- choose one of the addresses with a balance greater than 0, then click on `Access My Wallet`
+			- (We will coordinate to ensure that none of you end up choosing the same address)
 		
 - **Eine Transaktion Senden**
 	- Sie sollten jetzt eine Übersicht über Ihren Account sehen. Dort können Sie dann unter `Send Transaktion` eine Transaktion senden.
