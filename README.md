@@ -1,6 +1,6 @@
 
-# NConf 2019
-## Workshop Supply Chain Management using Blockchains
+# Blossom Summer School 2019
+## Tutorial on Token creation
 ### von [Chaindrium](https://chaindrium.com)
 <br/><br/><br/>
 
