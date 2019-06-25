@@ -1,17 +1,15 @@
 
 # Blossom Summer School 2019
-## Tutorial on Token creation
+## Tutorial on token creation and usage
 ### von [Chaindrium](https://chaindrium.com)
 <br/><br/><br/>
 
-Lassen Sie sich nicht von der Menge an Text abschrecken, Blockchains sind halt kompliziert :)
+This repository has **three** parts. You can choose one of the three parts or do all the parts at this tutorial. However, we suggest that you do the parts in order, especially do the part for "For programmers" before doing the "For hard-coders" part. 
+- For non-programmers
+- For programmers
+- For hard-coders
 
-Dieses Repository enthält **drei** Teile. Sie können ganz nach Ihrem Wunsch eines der drei Projekte im Zuge des Workshops bearbeiten. Wir empfehlen allerdings den Teil "Für ProgrammiererInnen" vor dem Teil "Für Hard-Coder" zu machen.
-- Für Nicht-ProgrammiererInnen
-- Für ProgrammiererInnen
-- Für Hard-Coder
-
-### Für Nicht-ProgrammiererInnen
+### For non-programmers
 Diese Anleitung leitet Sie durch den Prozess eine Transaktion auf dem [Ethereum Test Netzwerk](https://ropsten.etherscan.io/) von einer Addresse zu einer anderen ausführen. Dieses Projekt richtet sich explizit an TeilnehmerInnen die keine Programmiererfahrung haben und trotzdem gerne einen Einblick in den praktischen Umgang mit Blockchains haben möchten.
 *Sollten Sie Fragen haben geben Sie gerne Handzeichen oder sprechen uns direkt an.*
 
