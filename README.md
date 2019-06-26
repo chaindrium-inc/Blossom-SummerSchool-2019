@@ -25,27 +25,26 @@ Please do the following:
 		- choose one of the addresses with a balance greater than 0, then click on `Access My Wallet`
 			- (We will coordinate to ensure that none of you end up choosing the same address)
 		
-- **Eine Transaktion Senden**
-	- Sie sollten jetzt eine Übersicht über Ihren Account sehen. Dort können Sie dann unter `Send Transaktion` eine Transaktion senden.
-	- Dazu müssen Sie die entsprechenden Felder ausfüllen
-		- Tragen Sie unter `To Address` eine Addresse ein, vielleicht finden Sie ja eine(n) PartnerIn dem Sie etwas von Ihrem Guthaben schicken möchten.
-		- Unter `Amount` Tragen Sie bitte den Betrag ein den Sie senden möchten. 
-	- Ihr Account hat momenten ca 0.5 ROP (Die Währung des Test-Netzwerkes), das heißt sie müssen einen Betrag wählen der kleiner ist, das liegt daran dass Transaktionen Gebühren kosten, sollten Sie also versuchen all Ihr Geld zu versenden haben Sie kein Geld mehr um die Transaktions-Gebühren zu bezahlen (wählen Sie einen Betrag der relativ klein ist, damit nicht alles Geld sofort weg ist und andere auch noch ausprobieren können).
-	- Jetzt können Sie auf `Send Transaktion` klicken
-	- Danach öffnet sich ein Fenster in dem Sie die Transaktion nochmals überprüfen und dann bestätigen können
+- **Send A Single Transaction**
+	- Take a look at your account balance. Then, click on `Send Transaction` in order to make a transaction
+	- Please fill in the following fields
+		- in the `To Address`, please add the address to which you would like to make the transaction to. You could choose the address of the person sitting next to you in order to make it easy to verify.
+		- in `Amount`, please enter the amount you will like to send. Note that your account has a balance of approx. 0.5 ROP (The currency in the test network). Therefore, choose a value lesser than what you have in the account so that you have some money to pay as transaction fee too. Best to therefore enter a very low value so that you have more money to perform more experiments.  
+	- Now, click on `Send Transaction`
+	- A new window will open up. Here, you can double check the values and confirm the transaction. 
 
-- **Fertig**, Sie haben jetzt eine Transaktion von Ihrer Addresse zu der von Ihnen eingegebenen Addresse ausgelöst. Es wird einige Sekunden dauern bis diese Transaktion in der Blockchain eingebettet ist
+- **Done**, You have now successfully made a transaction to transfer money from one account to another. You will be able to view the transaction on the testnet in a few seconds. 
 
-- **Die Transaktion auf etherscan.io anschauen**
-	- Dafür klicken Sie nach dem Bestätigen der Transaktion auf `Check Status on Etherscan.io`
-	- Jetzt sollte sich in Ihrem Browser ein neues Fenster geöffnet haben, dort können Sie sich die Detaills ihrer Transaktion anschauen.
-	- Zum Beispiel könnten Sie sich den Hash Ihrer Transaktion anschauen
-	- Oder Sie könnten den Block, in dem die Transaktion eingebettet ist,  untersuchen und sich ansehen welche anderen Transaktionen noch in diesem Block waren
+- **View the transaction on etherscan.io**
+	- After confirming the transaction, please click on `Check Status on Etherscan.io`
+	- Now, a new tab should open up with details of the transaction.
+	- You can for example see the hash of your transaction
+	- You can also take a look at the block in which your transaction was added and take a look at other transactions in there. 
 
 
 <br/><br/><br/>
 
-### Für ProgrammiererInnen
+### For Programmers
 Diese Anleitung begleitet Sie anhand eines Beispiels durch den Prozess Entitäten auf der Blockchain zu erstellen, zu versenden und Daten dieser Entitäten von der Blockchain zu holen. Dieses Projekt erklärt die Basis auf der mit einer Blockchain interagiert werden kann. Es richtet sich explizit an TeilnehmerInnen die Erfahrung mit Programmierung haben und nicht davor zurück schrecken selbst Hand an den Code zu legen.
 *Sollten Sie Fragen haben geben sie gerne Handzeichen oder sprechen uns direkt an.*
 
