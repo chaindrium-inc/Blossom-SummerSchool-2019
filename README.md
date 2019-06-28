@@ -159,7 +159,7 @@ Wir werden im Weiteren Verlauf dieser Aufgaben diese drei Nutzerrollen "Produzen
 
 - navigieren Sie zu `/src/01_advanced/`
 
-#### Aufgabe 0:
+#### Exercise 0:
 Zur Modellierung dieser Supply-Chain benutzen wir einen Smart Contract (`potato`). Machen Sie sich mit `potato/potato.sol` vertraut. 
 Es ist wichtig dass Sie verstehen was die Felder
 - `producer`
@@ -184,31 +184,30 @@ und wie Sie mit den Funktionen
 
 diese Felder beeinflussen/auslesen.
 
-#### Aufgabe 1:
-- Erstellen Sie eine Datei (`deploy_potato.py`) die den `potato` Smart Contract mit der von Ihnen generierten Adresse auf der Blockchain erstellt
-- Geben Sie dem Constructor des `potato` Smart Contracts 
-	- sowohl einen `string name` der den Namen der Kartoffel darstellt (https://de.wikipedia.org/wiki/Liste_von_Kartoffelsorten) 
-	- die addresse des producers ist automatisch der ersteller des Smart Contracts (`producer = msg.sender` im Constructor des Smart Contracts)
-- erzeugen Sie eine Transaktion die den Contract auf der Blockchain erstellt
-- geben Sie den Hash der Transaktion am Ende Ihres Skriptes aus
+#### Exercise 1:
+- Write code (`deploy_potato.py`) that deploys the `potato` Smart Contract on blockchain
+- Ensure that all the variables required for the `potato` Smart Contract contractor is provided
+	- For `string name`, you could use the name of a potato from  (https://de.wikipedia.org/wiki/Liste_von_Kartoffelsorten) 
+	- The address of the producers is automatically set to the one executing the transaction. See `potato` Smart Contract where `producer = msg.sender` in the constructor does that. 
+- Also print the transaction id
+- Execute the file to create a `potato` smart contract
 
-- Erzeugen Sie einen `potato` Smart Contract auf der Blockchain
+#### Exercise 2:
+- Write code (`send_potato_to_factory.py`) to send the `potato` Smart Contract to the factory
+- Execute the function to send the potato to the factory
+- Note: Create a separate address for the factory and keep a copy of the address as well as the private key for Exercise 4
 
-#### Aufgabe 2:
-- Erstellen Sie eine Datei (`send_potato.py`) die den `potato` Smart Contract an die Fabrik sendet
-- Senden Sie den in Aufgabe 1 erzeugten `potato` Smart Contract an die Fabrik
+#### Exercise 3:
+- Write code (`produce_vodka.py`) to call the function `to_vodka` in the `potato` Smart Contract
+- Execute the function to convert the potato into vodka
 
-#### Aufgabe 3:
-- Erstellen Sie eine Datei (`produce_vodka.py`) die auf dem `potato` Smart Contract die Methode `to_vodka` aufruft
-- Benutzen Sie die Datei um aus der in Aufgabe 1 erzeugten Kartoffel Wodka zu machen
+#### Exercise 4:
+- Write code (`send_vodka_to_consumer.py`) to send the vodka from the factory to the consumer
+	- Note that the factory and consumer address is right
+	- Execute it to send the vodka to the consumer
 
-#### Aufgabe 4:
-- Senden Sie (in dem Fall die Fabrik) den Wodka an den Konsumenten 
-	- verwenden Sie hierzu das Skript aus Aufgabe 2
+#### Exercise 5:
+- Write code (`get_potato_information.py`) that calls the methods `is_vodka`, `get_producer`, `get_factory`, `get_name` and dispalys the results in the console. 
+- Check if all the displayed information is correct
 
-#### Aufgabe 5:
-- Erstellen Sie eine Datei (`get_potato_information.py`) die die Methoden `is_vodka`, `get_producer`, `get_factory`, `get_name` aufruft und das Ergebnis in der Konsole anzeigt.
-- Führen Sie die Datei aus und überprüfen Sie ob alle Informationen korrekt sind
-
-
-Viel Spass und Erfolg :)
+Have fun :)
