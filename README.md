@@ -45,33 +45,33 @@ Please do the following:
 <br/><br/><br/>
 
 ### For Programmers
-Diese Anleitung begleitet Sie anhand eines Beispiels durch den Prozess Entitäten auf der Blockchain zu erstellen, zu versenden und Daten dieser Entitäten von der Blockchain zu holen. Dieses Projekt erklärt die Basis auf der mit einer Blockchain interagiert werden kann. Es richtet sich explizit an TeilnehmerInnen die Erfahrung mit Programmierung haben und nicht davor zurück schrecken selbst Hand an den Code zu legen.
-*Sollten Sie Fragen haben geben sie gerne Handzeichen oder sprechen uns direkt an.*
+This step by step tutorial is to demonstrate the creation of a token, transfer tokens and to retrieve some features of the token. It demonstrates the basic interactions one could perform with blockchain. This tutorial is for people familiar with programming. 
+*In case you have any queries or require assistance, feel free to speak to me.*
 
-#### Was Sie benötigen: 
+#### Requirements: 
 - python3.6
-- installieren Sie folgende Python Bibliotheken:
+- Please install the following library:
 	- `pip3 install web3`
-- alternativ können Sie auch python-virtualenv benutzen: `pip install virtualenv`
+- Alternatively, you could use python-virtualenv: `pip install virtualenv`
 	- `source ./virtual_env/bin/activate`
-	- jetzt befinden Sie sich in einer Virtuellen Python3 Umgebung die wir für Sie vorbereitet haben
+	- You will now find yourseld in the python virtual environment
 
-#### Was wollen wir hier entwickeln:
-Nehmen wir an Sie haben ein NConf-Ticket das Sie gerne jemandem schenken würden. Diese Person könnte das Ticket ja auch weiter verschenken. Sie würden aber gerne wissen wer das Ticket letztendlich besitzt. Diesen Prozess würden wir gerne auf einer Blockchain abbilden.
+#### What are we going to develop here:
+Let's assume that you have a Blossom-Tticket that you would like to gift someone. The person could further gift this ticket. However, you would like to know who has the ticket at any point of time. Let's develop this on blockchain. 
 
-#### Dazu sind die folgenden Schritte nötig:
+#### Let's do the following steps:
 
-- laden Sie das Repository von https://github.com/chaindrium-inc/NConf-Workshop-2019 herunter. Sie können `git clone` verwenden oder einfach auf github.com `download` klicken und das zip Archiv entpacken.
-- navigieren Sie zu `/src/01_basic/`
+- Download the repository from https://github.com/chaindrium-inc/Blossom-SummerSchool-2019. You could either use `git clone` or click on `download` and then extract the files from the zip file. 
+- go to `/src/01_basic/`
 
-- **Erzeugen eines eigenen Wallets**
-	- Öffnen Sie die Datei `generate_wallet.py`
-		- Hier wird ein Wallet für Sie generiert, Sie sind dazu eingeladen den Code anhand der Dokumentation nach zu vollziehen
-		- ändern Sie die Variable `random_string`, diese hilft dabei ein besonders sicheres Wallet zu generieren.
-	- Führen Sie die Datei aus
-		- Jetzt sollten Sie von dem Skript eine Adresse zurück geliefert bekommen haben, kopieren und speichern Sie diese Adresse, Sie werden sie später noch brauchen
-		- Außerdem hat das Skript eine die Datei `wallet/private.key` erzeugt. In dieser befindet sich Ihr privater Schlüssel. Passen Sie gut auf diese Datei auf. Sollten Sie den Schlüssel verlieren, dann haben Sie keine Möglichkeit mehr auf Ihr Wallet zu zu greifen.
-	- Da das Skript Ihre `wallet/private.key` Datei überschreibt sollten Sie es lediglich einmal ausführen
+- **Create your own wallet**
+	- Open the file `generate_wallet.py`
+		- This will help create a wallet for you. Take a look at the code and the documentation. 
+		- Change the variable `random_string`. This helps to create a secure wallet. 
+	- Execute the file
+		- You will now see that the script outputs an address. Copy and save this address. This is the address (it is in fact a public key) of your wallet and you will need it later. 
+		- Moreover, the script has stored a file named `wallet/private.key`. In this file, you will find the private key for your address. Take care of this file. In case you lose this, you won't be able to access your wallet. Or in case some one else gets hold of this key, they can access your wallet and steal your coins. 
+	- Note that everytime you rerun the script `generate_wallet.py`, a new wallet address is being generated and therefore the privat key in `wallet/private.key` is being overwritten.
 
 - **Guthaben kaufen und abfragen**
 	- Sie brauchen Guthaben auf Ihrem Wallet da Transaktionen Gebühren kosten, sonst können Sie keine Transaktionen ausführen
