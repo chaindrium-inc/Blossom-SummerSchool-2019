@@ -73,56 +73,56 @@ Let's assume that you have a Blossom-Tticket that you would like to gift someone
 		- Moreover, the script has stored a file named `wallet/private.key`. In this file, you will find the private key for your address. Take care of this file. In case you lose this, you won't be able to access your wallet. Or in case some one else gets hold of this key, they can access your wallet and steal your coins. 
 	- Note that everytime you rerun the script `generate_wallet.py`, a new wallet address is being generated and therefore the privat key in `wallet/private.key` is being overwritten.
 
-- **Guthaben kaufen und abfragen**
-	- Sie brauchen Guthaben auf Ihrem Wallet da Transaktionen Gebühren kosten, sonst können Sie keine Transaktionen ausführen
-		- Tragen Sie Ihre generierte Addresse [hier](https://medienpad.de/p/chaindrium) ein. Wir werden Ihnen dann etwas Guthaben schenken, damit Sie weiter arbeiten können. Dies kann allerdings einen Moment in Anspruch nehmen.
-	- Jetzt können Sie die Datei `see_balance.py` ansehen und (nach dem Sie Ihre Addresse eingefügt haben) ausführen, dann sollten Sie das Aktuelle Guthaben ihres Wallets sehen
-	- Sobald Ihr Guthaben großer als 0 ist können Sie mit dem nächsten Schritt fortfahren
-		- in der Zwischenzeit könne Sie ja mal einen Blick auf die Datei `token_contract/NConfToken.sol` werfen. Das ist der Smart Contract den wir gleich auf die Blockchain laden werden.
+- **Get some balance and create a new token**
+	- You will need some ether in your account in order to perform transactions, i.e., to pay the transaction fee. 
+		- Enter your address [here](https://faucet.ropsten.be/) to get an ether on the test network. 
+		- Alternatively, enter your address [here](https://medienpad.de/p/chaindrium). I/We will try to send you some tokens. This can take a while. 
+	- Now, take a look at the file `see_balance.py`. Replace the address variable with your address. When you run the file, you will be able to see your balance. 
+	- As soon as your balance is above zero, you can go on with the next step.
+		- In the mean time, you can also take a look at the token creation file `token_contract/NConfToken.sol`. This is the smart contact that we will use in the next step.
 
-- **Einen Smart Contract auf der Blockchain erstellen**
-	- Schauen Sie sich hierzu die Datei `deploy_token.py` an
-		- Sie erstellt einen Smart Contract auf dem [Ethereum Test Netzwerk](https://ropsten.etherscan.io/)
-	- Hier können Sie in den ersten Zeilen sehen dass einige Variablen gesetzt werden. Vor allem die Variable `token_name` sollten Sie anpassen um Ihrem Token einen eigenen Namen zu geben.
-	- Führen Sie die Datei aus
-	- Wenn alles geklappt hat sollte die Datei Ihnen einen Hash-Wert Ihrer gerade erzeugten Transaktion anzeigen
-	- Öffnen Sie [https://ropsten.etherscan.io/](https://ropsten.etherscan.io/) in Ihrem Browser
-		- Auf dieser Website können Sie alle Blöcke und Transaktionen der "Test-Blockchain" sehen
-	- Geben Sie in die Suchleiste den Hash Ihrer Transaktion ein
-	- Jetzt sollten Sie Ihre Transaktion sehen können
-	- vergleichen Sie die `from` Adresse mit der Ihren. Die Adressen sollten Identisch sein.
-	- unter `to` sollten Sie die Adresse des von Ihnen erzeugten Smart Contracts sehen
-	- kopieren Sie diese
+- **Set up a smart contract on Blockchain**
+	- Take a look at the file `deploy_token.py`
+		- you are going to deploy a smart contract on [Ethereum Test Network](https://ropsten.etherscan.io/)
+	- You can observe that some variables are set in the first few rows. Most importantly, set the variable `token_name` to have the name of the token (e.g. Blossom_myname).
+	- Execute the file
+	- When everything works fine, you will get a hash code that represents your transaction.
+	- Open [https://ropsten.etherscan.io/](https://ropsten.etherscan.io/) in your browser
+		- In this webstie, you will be able to find all the blocks and transactions belonging to the test network. 		
+	- In the search box, enter the hash of your transaction
+	- You will be able to see your transaction now
+	- Take a look at the `from` address. It should be your address since you deployed the smart contract.
+	- In the `to` field, it should be the address of your smart contract
+		- Copy this address
 
-- **Den Namen des Tokens abfragen**
-	- Schauen Sie sich hierzu die Datei `get_token_name.py` an
-	- ändern Sie die Variable `token_address`, tragen Sie dort die Adresse Ihres Tokens ein
-	- Führen Sie die Datei aus
-	- Jetzt sollte Ihnen das Skript den Namen Ihres Tokens anzeigen
-		- Vielleicht finden Sie ja einen Partner dessen Token Namen Sie auch abfragen können
+- **Check the name of the token**
+	- Take a look at the file `get_token_name.py` 
+	- Edit the variable `token_address`: enter the address of your token, i.e., the smart contract
+	- Execute the file
+	- You will now see that the name of your token is output
+		- You could try to redo the experiment to get your partner's token's name
 
-- **Den Besitzer des Tokens abfragen**
-	- Schauen Sie sich hierzu die Datei `get_token_owner.py` an
-	- ändern Sie die Variable `token_address`, tragen Sie dort die Adresse Ihres Tokens ein
-	- Führen Sie die Datei aus
-	- Jetzt sollte Ihnen das Skript den Besitzer Ihres Tokens anzeigen
-		- Vielleicht finden Sie ja eine(n) PartnerIn dessen Token Besitzer Sie auch abfragen können
+- **Check the owner of the token**
+	- Take a look at the file `get_token_owner.py` 
+	- Edit the variable `token_address`: Enter the address of your token here
+	- Execute the file
+	- You will be able to see the address of the owner of the token holder
+		- You could redo the experiment for a different token, e.g., that of your partner(s)
 
-- **Ihr Token jemandem anderen geben**
-	- Schauen Sie sich hierzu die Datei `send_token.py` an
-	- ändern Sie die Variable `token_address`, tragen Sie dort die Adresse Ihres Tokens ein
-	- ändern Sie die Variable `new_owner`, tragen Sie dort die Adresse desjenigen ein dem Sie das Token geben möchten
-		- Vielleicht finden Sie ja einen Partner mit dem Sie Tokens tauschen können
-	- Führen Sie die Datei aus
-		- jetzt sollte das Token nicht mehr Ihnen gehören, sondern der Person der Sie das Token gegeben haben. Dies können Sie mit den Schritten unter "Den Besitzer des Tokens abfragen" nachvollziehen
+- **Give the token to someone else**
+	- Take a look at the file `send_token.py` 
+	- Edit the variable `token_address`: Enter the address of your token here
+	- Edit the variable `new_owner`: Enter the address of the person you want to give your token to
+		- Best to find a partner with whom you can exchange your tokens
+	- Execute the file
+		- Now, the tokens should no longer belong to you, but it should belong to the person you send it to. 
+			- Do the previos test `Check the owner of the token` to verify it. 
+			- Also execute the file `see_balance.py` to check your balance. Some of it would have been used to execute the transaction. 
 
-- **Fertig**
-	- Sollten Sie noch Zeit und Muße haben können Sie jetzt 
-		- entweder mit dem Advanced Teil fortfahren 
-		- oder sie schauen sich unter [https://ropsten.etherscan.io/](https://ropsten.etherscan.io/) Ihre Addresse an
-			- geben Sie dazu einfach ihre Adresse in das Suchfenster ein
-			- hier sollten Sie jetzt einen Überblick über Ihr Guthaben und die von Ihnen ausgelösten, bzw. Erhaltenen Transaktionen sehen
-
+- **Done**
+	- Take a look at your address in [https://ropsten.etherscan.io/](https://ropsten.etherscan.io/) 
+		-Just enter your address in the search box 
+		-You should be able to see your balance and the executed transactions. 
 
 <br/><br/><br/>
 
