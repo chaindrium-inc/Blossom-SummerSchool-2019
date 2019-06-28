@@ -93,7 +93,7 @@ Let's assume that you have a Blossom-Tticket that you would like to gift someone
 	- You will be able to see your transaction now
 	- Take a look at the `from` address. It should be your address since you deployed the smart contract.
 	- In the `to` field, it should be the address of your smart contract
-		- Copy this address
+		- Copy this address (Tip: In order to ensure that the correct address is copied, best to click on the contract address and then when etherscan.io displays the contract details, copy the contract address from the top). Note, we refer to this as the token address sometimes later on. 
 
 - **Check the name of the token**
 	- Take a look at the file `get_token_name.py` 
