@@ -1,6 +1,6 @@
 
 # Blossom Summer School 2019
-## Tutorial on token creation and usage
+## Tutorial on token creation and usage for supply chain management
 ### von [Chaindrium](https://chaindrium.com)
 <br/><br/><br/>
 
