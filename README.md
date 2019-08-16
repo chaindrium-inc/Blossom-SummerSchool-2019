@@ -1,7 +1,7 @@
 
 # Blossom Summer School 2019
 ## Tutorial on token creation and usage for supply chain management
-### von [Chaindrium](https://chaindrium.com)
+### Offered by [Chaindrium](https://chaindrium.com)
 <br/><br/><br/>
 
 This repository has **three** parts. You can choose one of the three parts or do all the parts at this tutorial. However, we suggest that you do the parts in order, especially do the part for "For programmers" before doing the "For hard-coders" part. 
