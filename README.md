@@ -13,7 +13,15 @@ This repository has **three** parts. You can choose one of the three parts or do
 This tutorial is to demonstrate how payments can be made from one address to another address in the [Etheream Test Network](https://ropsten.etherscan.io/). This part of the tutorial is for those participants who have no programming expertise but would still like to experience first hand how transactions take place in Ethereum. It is also applicable for those who would like to ease into the tutorials by performing an easier tasks first. 
 
 Please do the following:
-- **Access an already prepared account** 
+- **Create a MyEtherWallet Account**
+	- Go to the following website in your browser: https://www.myetherwallet.com/ 
+	- Click on `Create a New Wallet`
+	- Select `Mnemonic Phrase` and click on `continue`
+	- Please store the 12 words that you can see.
+	- No need for "passowrd"
+	- Click on `I wrote down My Mnemonic Phrase`
+	
+- **Access a MyEtherWallet Account**
 	- Go to the following website in your browser: https://www.myetherwallet.com/ 
 	- Click on `Access My Wallet`
 	- Click on `Software` 
@@ -22,8 +30,10 @@ Please do the following:
 		- now, in `1`, please choose the testnet `ROP - myetherwallet.com` 
 		- in `2`, please select on the top right hand corner `Ethereum Testnet (Ropsten)`
 		- now, you should see a list with addresses and corresponding balance
-		- choose one of the addresses with a balance greater than 0, then click on `Access My Wallet`
-			- (We will coordinate to ensure that none of you end up choosing the same address)
+		- choose one of the addresses (in case you have already transferred some coins, use that account)
+			- then click on `Access My Wallet`
+- **Send some test coins**
+			
 		
 - **Send A Single Transaction**
 	- Take a look at your account balance. Then, click on `Send Transaction` in order to make a transaction
