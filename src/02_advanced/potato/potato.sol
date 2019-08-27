@@ -1,5 +1,5 @@
 //this token contract was created by Simon Schuler (sschuler@chaindrium.com) 
-//for the Workshop "Supply-Blockchain management" at NConf 2019
+//for the Chaindrium Tutorial Series
 
 pragma solidity >=0.4.22 <0.6.0;
 
