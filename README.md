@@ -173,7 +173,7 @@ The consumer would like to have the following information about the vodka he/she
 	
 <br/><br/><br/>
 
-**You can do this in a group of three such that one is a producer, the other is the factory and the third is the consumer. Alternatively, you can play all the three roles. **
+**Initially, you can do this in a group of three such that one is a producer, the other is the factory and the third is the consumer. You could then attempt to play all the three roles. Remember to create multiple keys, a key set for each role. **
 
 - Go to `/src/01_advanced/`
 
