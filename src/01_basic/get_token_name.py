@@ -1,6 +1,6 @@
 """
 this python script was created by Simon Schuler (sschuler@chaindrium.com)
-for the Workshop "Supply-Blockchain management" at NConf 2019
+for the Chaindrium Tutorial Series
 """
 
 import json
