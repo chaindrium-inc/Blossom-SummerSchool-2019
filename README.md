@@ -33,27 +33,24 @@ Please do the following:
 		- choose one of the addresses (in case you have already transferred some coins, use that account)
 			- then click on `Access My Wallet`
 	
-	- *** Faucet: Send some test coins***
+- **Faucet: Send some test coins (Option I)**
 		- Go to the following website in your browser: https://faucet.ropsten.be/
 		- Copy paste the selected address from above and paste it in this site
 		- click on `Send me test Ether`
 		- You can click on the transaction id provided to monitor the transaction
 		- Wait till the balance shows up on your MyEtherWallet for that particular address
+		- In case it takes a while or if you have issues getting the coins, continue to option II (Option II also provides other means of getting faucets/test-coins)
 	
-- **Access a MyEtherWallet Account (option II)**
+- **Access a MyEtherWallet Account via Metamask and obtain faucets (option II)**
 	- Install metamask extension on your browser
 	- Click on the metamask extension
 	- Click on "import using account seed phrase"
 	- Enter the 12 words and add a password (you can use the account next time with just the password)
-
-- **Faucet: Send some test coins**
-	- Go to the following website in your browser: https://faucet.ropsten.be/
-	- Copy paste the selected address from above and paste it in this site
-	- click on `Send me test Ether`
-	- You can click on the transaction id provided to monitor the transaction
-	- Wait till the balance shows up on your MyEtherWallet for that particular address
-						
-- **Send A Single Transaction**
+	- The First time, you will have to click on allow metamask to connect with myetherwallet (Else go to myEtherWallet -> Access my account -> metamask)
+	- Then go to the webpage https://faucet.metamask.io/ and click on request faucet (Here, you can get multiple faucets).
+	- Check the balance in metamask
+							
+- **Send A Single Transaction (Try it out both on myetherwallet and metamask)**
 	- Take a look at your account balance. Then, click on `Send Transaction` in order to make a transaction
 	- Please fill in the following fields
 		- in the `To Address`, please add the address to which you would like to make the transaction to. You could choose the address of the person sitting next to you in order to make it easy to verify.
@@ -85,7 +82,7 @@ This step by step tutorial is to demonstrate the creation of a token, transfer t
 	- You will now find yourseld in the python virtual environment
 
 #### What are we going to develop here:
-Let's assume that you have a Blossom-Tticket that you would like to gift someone. The person could further gift this ticket. However, you would like to know who has the ticket at any point of time. Let's develop this on blockchain. 
+Let's assume that you have a Blossom-Ticket that you would like to gift someone. The person could further gift this ticket. However, you would like to know who has the ticket at any point of time. Let's develop this on blockchain. 
 
 #### Let's do the following steps:
 
@@ -103,8 +100,7 @@ Let's assume that you have a Blossom-Tticket that you would like to gift someone
 
 - **Get some balance and create a new token**
 	- You will need some ether in your account in order to perform transactions, i.e., to pay the transaction fee. 
-		- Enter your address [here](https://faucet.ropsten.be/) to get an ether on the test network. 
-		- Alternatively, enter your address [here](https://medienpad.de/p/chaindrium). I/We will try to send you some tokens. This can take a while. 
+		- Enter your address [here](https://faucet.ropsten.be/) to get an ether on the test network or login via metamask and click [here](https://faucet.metamask.io/). 		 
 	- Now, take a look at the file `see_balance.py`. Replace the address variable with your address. When you run the file, you will be able to see your balance. 
 	- As soon as your balance is above zero, you can go on with the next step.
 		- In the mean time, you can also take a look at the token creation file `token_contract/NConfToken.sol`. This is the smart contact that we will use in the next step.
@@ -154,28 +150,27 @@ Let's assume that you have a Blossom-Tticket that you would like to gift someone
 
 <br/><br/><br/>
 
-### Für Hard-Coder
-Die hier präsentierten Aufgaben sind so gestellt dass Sie mit dem Teil **Für ProgrammiererInnen** lösbar sein sollten. Hier werden Sie mit Absicht nicht an die Hand genommen sondern sollen selbst eine Anwendung für Blockchains entwickeln.
-*Sollten Sie Fragen haben geben sie gerne Handzeichen oder sprechen uns direkt an.*
+### For Hard-coders
+This is a tutorial for experienced programmers to get a feel of developing their own token. 
+*Incase of queries, contact me directly.*
 
-#### Was Sie benötigen: 
+#### Requirements: 
 - python3.6
-- installieren Sie folgende Python Bibliotheken:
+- Please install the following library:
 	- `pip3 install web3`
-- alternativ können Sie auch python-virtualenv benutzen: `pip install virtualenv`
+- Alternatively, you could use python-virtualenv: `pip install virtualenv`
 	- `source ./virtual_env/bin/activate`
-	- jetzt befinden Sie sich in einer Virtuellen Python3 Umgebung die wir für Sie vorbereitet haben
+	- You will now find yourseld in the python virtual environment
 
+#### What are we going to develop here:
+Let's assume that you are a farmer (producer) and that you produce bio-potatoes. These potatoes will be sent by you to a factory that makes vodka. The vodka is then solde to consumers. 
 
-#### Was wollen wir hier entwickeln:
-Wir stellen uns vor Sie sind Bauer (Produzent) und Sie verkaufen Bio-Kartoffeln. Diese Kartoffeln werden von Ihnen an eine Fabrik verkauft die daraus Wodka herstellt. Dieser Wodka wird dann von jemandem gekauft (Konsument).
-
-Der Konsument würde gerne einige Informationen über den von Ihm gekaufen Wodka wissen:
-- wer hat die Kartoffeln hergestellt
-- wer hat aus den Kartoffeln Wodka gemacht
-- sind die Kartoffeln aus Biologischer Erzeugung
-- welche Sorte von Kartoffeln wurde für den Wodka genutzt
-
+The consumer would like to have the following information about the vodka he/she buys: 
+	- Who had produced the potato
+	- Who produced the vodka
+	- Are the potatoes bio
+	- What kind of potatoes were used for producing the vodka
+	
 <br/><br/><br/>
 
 **Tun Sie sich hierzu zu dritt oder zu mehreren zusammen, sodass einer von Ihnen der Produzent, einer von Ihnen die Fabrik und einer von Ihnen der Konsument ist.**
