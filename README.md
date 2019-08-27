@@ -173,27 +173,20 @@ The consumer would like to have the following information about the vodka he/she
 	
 <br/><br/><br/>
 
-**Tun Sie sich hierzu zu dritt oder zu mehreren zusammen, sodass einer von Ihnen der Produzent, einer von Ihnen die Fabrik und einer von Ihnen der Konsument ist.**
+**You can do this in a group of three such that one is a producer, the other is the factory and the third is the consumer. Alternatively, you can play all the three roles. **
 
-Alternativ können Sie auch so tun als ob sie alle 3 dieser Personen darstellen.
-
-Wir werden im Weiteren Verlauf dieser Aufgaben diese drei Nutzerrollen "Produzent", "Fabrik" und "Konsument" nennen. 
-
-
-- navigieren Sie zu `/src/01_advanced/`
+- Go to `/src/01_advanced/`
 
 #### Exercise 0:
-Zur Modellierung dieser Supply-Chain benutzen wir einen Smart Contract (`potato`). Machen Sie sich mit `potato/potato.sol` vertraut. 
-Es ist wichtig dass Sie verstehen was die Felder
+In order to model this supply chain, we will make use of a smart contract (`potato`). Take a look at `potato/potato.sol`. 
+Please understand all the following variables:
 - `producer`
 - `factory`
 - `is_vodka`
 - `name`
 - `owner`
 
-machen 
-
-und wie Sie mit den Funktionen 
+and the following functions:  
 - `constructor`
 - `send`
 - `set_factory`
@@ -204,8 +197,6 @@ und wie Sie mit den Funktionen
 - `who_is_factory`
 - `get_name`
 - `is_bio_potato`
-
-diese Felder beeinflussen/auslesen.
 
 #### Exercise 1:
 - Write code (`deploy_potato.py`) that deploys the `potato` Smart Contract on blockchain
