@@ -21,7 +21,7 @@ Please do the following:
 	- No need for "passowrd"
 	- Click on `I wrote down My Mnemonic Phrase`
 	
-- **Access a MyEtherWallet Account**
+- **Access a MyEtherWallet Account (option I)**
 	- Go to the following website in your browser: https://www.myetherwallet.com/ 
 	- Click on `Access My Wallet`
 	- Click on `Software` 
@@ -32,6 +32,20 @@ Please do the following:
 		- now, you should see a list with addresses and corresponding balance
 		- choose one of the addresses (in case you have already transferred some coins, use that account)
 			- then click on `Access My Wallet`
+	
+	- *** Faucet: Send some test coins***
+		- Go to the following website in your browser: https://faucet.ropsten.be/
+		- Copy paste the selected address from above and paste it in this site
+		- click on `Send me test Ether`
+		- You can click on the transaction id provided to monitor the transaction
+		- Wait till the balance shows up on your MyEtherWallet for that particular address
+	
+- **Access a MyEtherWallet Account (option II)**
+	- Install metamask extension on your browser
+	- Click on the metamask extension
+	- Click on "import using account seed phrase"
+	- Enter the 12 words and add a password (you can use the account next time with just the password)
+
 - **Faucet: Send some test coins**
 	- Go to the following website in your browser: https://faucet.ropsten.be/
 	- Copy paste the selected address from above and paste it in this site
