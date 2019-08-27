@@ -32,9 +32,13 @@ Please do the following:
 		- now, you should see a list with addresses and corresponding balance
 		- choose one of the addresses (in case you have already transferred some coins, use that account)
 			- then click on `Access My Wallet`
-- **Send some test coins**
-			
-		
+- **Faucet: Send some test coins**
+	- Go to the following website in your browser: https://faucet.ropsten.be/
+	- Copy paste the selected address from above and paste it in this site
+	- click on `Send me test Ether`
+	- You can click on the transaction id provided to monitor the transaction
+	- Wait till the balance shows up on your MyEtherWallet for that particular address
+						
 - **Send A Single Transaction**
 	- Take a look at your account balance. Then, click on `Send Transaction` in order to make a transaction
 	- Please fill in the following fields
