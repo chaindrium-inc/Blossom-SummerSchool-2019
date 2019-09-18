@@ -4,7 +4,7 @@
 pragma solidity >=0.4.22 <0.6.0;
 
 /**
- * The potato contract acts as tokenized potato that is then processed into vodka
+ * The potato contract acts as a tokenized potato that is then processed into vodka
  */
 contract potato {
 
@@ -47,39 +47,24 @@ contract potato {
      * this one ensures that specific functions can only be executed by the current owner of this token
      */
     modifier owner_only() { 
-        if (msg.sender == owner) {
-            //start function code here
-            _;
-        } else {
-            //revert the transaction otherwise
-            revert();
-        } 
+        require(msg.sender == owner, 'Only the owner can call this function');
+        _;
     }
 
     /**
      * this one esures that only the producer can execute specific functions
      */
     modifier producer_only() { 
-        if (msg.sender == producer) {
-            //start function code here
-            _;
-        } else {
-            //revert the transaction otherwise
-            revert();
-        } 
+        require(msg.sender == owner, 'Only the producer can call this function');
+        _; 
     }
 
     /**
      * this one esures that only the factory can execute specific functions
      */
     modifier factory_only() { 
-        if (msg.sender == factory) {
-            //start function code here
-            _;
-        } else {
-            //revert the transaction otherwise
-            revert();
-        } 
+        require(msg.sender == owner, 'Only the factory can call this function');
+        _; 
     }
 
     /**
