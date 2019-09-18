@@ -224,4 +224,10 @@ and the following functions:
 - Write code (`get_potato_information.py`) that calls the methods `is_vodka`, `get_producer`, `get_factory`, `get_name` and dispalys the results in the console. 
 - Check if all the displayed information is correct
 
+
+#### Note
+In case you modify the solidity file (for instance potato.sol), please do the following:
+- Get the solc package: https://solidity.readthedocs.io/en/v0.4.21/installing-solidity.html#binary-packages 
+- Then do: $ solc -bin -abi -o /path/to/file
+
 Have fun :)
