@@ -228,6 +228,7 @@ and the following functions:
 #### Note
 In case you modify the solidity file (for instance potato.sol), please do the following:
 - Get the solc package: https://solidity.readthedocs.io/en/v0.4.21/installing-solidity.html#binary-packages 
-- Then do: $ solc -bin -abi -o /path/to/file
+- Then do: $ solc potato.sol --bin --abi --overwrite -o /path/to/file or
+- do: $ solc potato.sol --bin --abi --overwrite -o . (in case you are in the correct folder)
 
 Have fun :)
